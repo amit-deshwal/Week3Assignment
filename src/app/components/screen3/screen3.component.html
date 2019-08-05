@@ -1,0 +1,13 @@
+<div >
+    <h1>Please enter some text</h1>
+    <input type="text" [(ngModel)] ="data" (ngModelChange)="onClick($event)"
+    style="margin-top: 10px; font-size:15px;" placeholder="Write your text here" >
+    <!-- <button style="margin: 10px;" (click)="show(text.value)">Submit</button><br> -->
+    <div *ngIf="show">
+        <p>Word Count-{{wordcount}}</p>
+        <p>Number of vowels-{{vcount}}</p>
+        <p>Number of articles in the text-{{article}}</p>
+        <p>Length the longest word in the text-{{longestWord}}</p>
+        <p>Length of the shortest word in the text-{{shortestWord}}</p>
+    </div>
+</div>

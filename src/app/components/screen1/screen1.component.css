@@ -1,0 +1,17 @@
+#wrapper button{
+    background-color: black;
+    border: 3px solid #4CAF50;
+    color: #4CAF50;
+    text-transform: uppercase;
+    height: inherit;
+    width: inherit;
+    transition: background-color 0.5s ease, color 1s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(77, 77, 77, 0.5);
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+#wrapper input{
+    font-size: 18px;
+}

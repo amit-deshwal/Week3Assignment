@@ -1,0 +1,49 @@
+<div>
+<form [formGroup]="new">
+  <div id="wrapper">
+      <input type="text" class="s1" #year placeholder="Year" (formControlName)="year">
+      <input type="text" class="s1" #number1 placeholder="SeriesA(in numbers)">
+      <input type="text" class="s1" #number2 placeholder="SeriesB(in numbers">
+      <button (click)="onClick(year.value,number1.value,number2.value)">Add data</button>
+  </div>
+
+</form>
+    <div style="width:45%;margin-top:20px;float: left;">
+            <canvas baseChart 
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+            </canvas>
+          </div>
+<div style="width:45%; margin-top:20px; float: left;">
+    <canvas baseChart 
+      [data]="doughnutChartData"
+      [labels]="doughnutChartLabels"
+      [chartType]="doughnutChartType">
+    </canvas>
+</div>
+
+  <div style="width:50%;margin-top:20px;float: left;">
+    <canvas baseChart 
+      [data]="pieChartData" 
+      [labels]="pieChartLabels" 
+      [chartType]="pieChartType"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend">
+    </canvas>
+  </div>
+  <div style="width:50%;margin-top:20px;float: left;">
+      <canvas baseChart
+        [data]="polarAreaChartData"
+        [labels]="polarAreaChartLabels"
+        [legend]="polarAreaLegend"
+        [chartType]="polarAreaChartType">
+      </canvas>
+    </div>
+    
+</div>
+  
