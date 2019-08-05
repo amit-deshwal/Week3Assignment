@@ -11,10 +11,6 @@ import { interval } from 'rxjs';
 })
 export class Screen2Component implements OnInit {
 
-  // abc = Object.values(data);
-  
-  // xyz = Object.keys(data);
-
   public years = [];
   public values=[];
   public interval;
